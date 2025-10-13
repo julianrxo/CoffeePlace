@@ -1,11 +1,10 @@
 # ☕ CoffeePlace
 
-**CoffeePlace** es una aplicación Android desarrollada en **Kotlin**, diseñada como una tienda virtual de café con una interfaz cálida, minimalista y moderna.  
-Permite a los usuarios registrarse, iniciar sesión y gestionar su perfil dentro de un entorno visual inspirado en los tonos del café.
+**CoffeePlace** es una aplicación Android desarrollada en **Kotlin**, diseñada como una tienda virtual de café con una interfaz cálida, minimalista y moderna.
 
 ---
 
-## 🚀 Características principales
+## 🚀 Características principales (No funcionales)
 
 - 🌅 **Pantalla Splash** con logo y nombre de la app.  
 - 👋 **Pantalla de Bienvenida** con acceso al login.  
@@ -25,16 +24,36 @@ Permite a los usuarios registrarse, iniciar sesión y gestionar su perfil dentro
 
 ---
 
-## 🎨 Paleta de colores
+## 📁 Estructura del proyecto
 
-| Elemento | Color | Código |
-|-----------|--------|---------|
-| Fondo principal | Crema claro | `#FAF3E0` |
-| Marrón principal | Café medio | `#6D4C41` |
-| Marrón oscuro | Café intenso | `#4E342E` |
-| Acento cálido | Café claro | `#A1887F` |
+app/
+├── manifests/
+├── java/
+│ └── com.example.coffeeplace/
+│ ├── Activity/
+│ │ ├── SplashActivity.kt
+│ │ ├── BienvenidaActivity.kt
+│ │ ├── LoginActivity.kt
+│ │ ├── RegistroActivity.kt
+│ │ └── PerfilActivity.kt
+│ └── MainActivity.kt
+└── res/
+├── layout/
+│ ├── activity_splash.xml
+│ ├── activity_bienvenida.xml
+│ ├── activity_login.xml
+│ ├── activity_registro.xml
+│ └── activity_perfil.xml
+├── values/
+│ ├── colors.xml
+│ ├── strings.xml
+│ └── themes.xml
+└── mipmap/
+└── iconplace.png
 
 ---
 
-## 📁 Estructura del proyecto
+## 👨‍💻 Autores
 
+**Oscar Riveros y Sebastián Pinzón**  
+📍 2025 2-DESARROLLO DE APLICACIONES MOVILES NATIVAS-2310-6B MOM 2 VIRTUAL - Proyecto académico *CoffeePlace*
