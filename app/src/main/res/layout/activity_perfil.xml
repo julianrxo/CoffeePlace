@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sección de perfil del usuario -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Imagen de perfil -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:src="@mipmap/iconplace"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/tvUserName"
+            android:text="@string/perfil_nombre"
+            android:textColor="@color/brown_dark"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Correo -->
+        <TextView
+            android:id="@+id/tvUserEmail"
+            android:text="@string/perfil_correo"
+            android:textColor="@color/brown_medium"
+            android:textSize="14sp"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Editar perfil -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:text="@string/btn_editar_perfil"
+            android:backgroundTint="@color/brown_light"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Cerrar sesión -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:text="@string/btn_cerrar_sesion"
+            android:backgroundTint="@color/coffee_primary"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

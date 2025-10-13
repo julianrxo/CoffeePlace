@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema principal basado en AppCompat -->
+    <style name="Theme.CoffeePlace" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Colores de la marca -->
+        <item name="colorPrimary">@color/coffee_primary</item>
+        <item name="colorPrimaryDark">@color/coffee_primary_dark</item>
+        <item name="colorAccent">@color/brown_light</item>
+
+        <!-- Personalización general -->
+        <item name="android:statusBarColor">@color/coffee_primary_dark</item>
+        <item name="android:navigationBarColor">@color/coffee_primary</item>
+        <item name="android:windowBackground">@color/cream_background</item>
+
+        <!-- Tipografía por defecto (uso seguro) -->
+        <item name="android:fontFamily">sans-serif</item>
+
+        <!-- Color de texto por defecto -->
+        <item name="android:textColor">@color/brown_dark</item>
+    </style>
+</resources>

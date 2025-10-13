@@ -1,0 +1,29 @@
+<resources>
+    <!-- Nombre general de la app -->
+    <string name="app_name">CoffeePlace</string>
+    <string name="coffeeplace">CoffeePlace</string>
+
+    <!-- Bienvenida -->
+    <string name="bienvenida_titulo">Bienvenido a CoffeePlace</string>
+    <string name="bienvenida_subtitulo">Tu tienda online de café artesanal ☕</string>
+    <string name="btn_comenzar">Comenzar</string>
+
+    <!-- Login -->
+    <string name="login_titulo">Login</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="btn_login">Iniciar sesión</string>
+    <string name="login_link_registro">¿No tienes cuenta? Regístrate</string>
+
+    <!-- Registro -->
+    <string name="registro_titulo">Registro</string>
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="btn_registrar">Crear cuenta</string>
+    <string name="registro_link_login">¿Ya tienes cuenta? Inicia sesión</string>
+
+    <!-- Perfil -->
+    <string name="perfil_nombre">Nombre del Usuario</string>
+    <string name="perfil_correo">correo@coffeeplace.com</string>
+    <string name="btn_editar_perfil">Editar perfil</string>
+    <string name="btn_cerrar_sesion">Cerrar sesión</string>
+</resources>
