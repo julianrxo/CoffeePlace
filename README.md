@@ -56,8 +56,7 @@ app/
 ## 👨‍💻 Autores
 
 * Oscar Riveros
-* Sebastián Pinzón
-
+* Sebastián Paéz
 ---
 
 ## 📚 Curso
