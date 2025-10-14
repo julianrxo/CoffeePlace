@@ -26,7 +26,7 @@ class SplashActivity : AppCompatActivity() {
         logo.startAnimation(fadeIn)
         appName.startAnimation(fadeIn)
 
-        // Espera 1 segundo y luego pasa a la Bienvenida
+        // Espera 1 segundo y luego pasa a la Bienvenida!
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, BienvenidaActivity::class.java)
             startActivity(intent)
