@@ -42,7 +42,7 @@ class AppViewModel : ViewModel() {
     }
 
 
-    // 🔹 --- PRODUCTOS --- (con callbacks)
+    // --- PRODUCTOS --- (con callbacks)
 
     // Solicita la lista de productos al repositorio.
     fun obtenerProductos() {
