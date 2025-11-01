@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -14,7 +16,7 @@
 
         <!-- Pantalla inicial -->
         <activity
-            android:name=".Activity.SplashActivity"
+            android:name=".view.SplashActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.CoffeePlace">
@@ -25,10 +27,11 @@
         </activity>
 
         <!-- Otras pantallas -->
-        <activity android:name=".Activity.BienvenidaActivity" />
-        <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.RegistroActivity" />
-        <activity android:name=".Activity.PerfilActivity" />
-
+        <activity android:name=".view.BienvenidaActivity" />
+        <activity android:name=".view.LoginActivity" />
+        <activity android:name=".view.RegistroActivity" />
+        <activity android:name=".view.PerfilActivity" />
+        <activity android:name=".view.ProductoActivity" />
+        <activity android:name=".view.CarritoActivity" />
     </application>
 </manifest>

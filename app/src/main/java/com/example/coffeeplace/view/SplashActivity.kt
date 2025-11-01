@@ -1,4 +1,4 @@
-package com.example.coffeeplace.Activity
+package com.example.coffeeplace.view
 
 import android.content.Intent
 import android.os.Bundle
@@ -15,21 +15,24 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // Referencias a los elementos del layout
         val logo = findViewById<ImageView>(R.id.logoImage)
         val appName = findViewById<TextView>(R.id.appName)
-
-        // Cargar animación desde res/anim
         val fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in)
 
-        // Aplicar la animación
         logo.startAnimation(fadeIn)
         appName.startAnimation(fadeIn)
 
-        // Espera 1 segundo y luego pasa a la Bienvenida!
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, BienvenidaActivity::class.java)
-            startActivity(intent)
+            val prefs = getSharedPreferences("CoffeePlacePrefs", MODE_PRIVATE)
+            val email = prefs.getString("email", null)
+
+            if (email != null) {
+                // ✅ Ya hay sesión activa
+                startActivity(Intent(this, ProductoActivity::class.java))
+            } else {
+                // 🚀 No hay sesión → ir a bienvenida
+                startActivity(Intent(this, BienvenidaActivity::class.java))
+            }
             finish()
         }, 1000)
     }

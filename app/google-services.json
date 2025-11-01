@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "603498285486",
+    "firebase_url": "https://appcoffeeplace-default-rtdb.firebaseio.com",
+    "project_id": "appcoffeeplace",
+    "storage_bucket": "appcoffeeplace.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603498285486:android:cc1b7765784505289be03f",
+        "android_client_info": {
+          "package_name": "com.example.coffeeplace"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeiiEduTUj3D5ufhj73reWDTr5CR_HFLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="#FAFAFA"
+    android:layout_marginBottom="8dp"
+    android:elevation="2dp"
+    android:gravity="center_vertical">
+
+    <!-- Contenedor interno para los textos -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Nombre del producto -->
+        <TextView
+            android:id="@+id/tvCarritoNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del producto"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- Cantidad del producto -->
+        <TextView
+            android:id="@+id/tvCarritoCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad: 1"
+            android:textColor="#555"
+            android:textSize="14sp" />
+
+        <!-- Precio del producto -->
+        <TextView
+            android:id="@+id/tvCarritoPrecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textColor="@color/coffee_primary"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Botón para eliminar el producto del carrito -->
+    <Button
+        android:id="@+id/btnEliminarCarrito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:paddingHorizontal="10dp" />
+</LinearLayout>

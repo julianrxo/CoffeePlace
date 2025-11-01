@@ -1,4 +1,4 @@
-package com.example.coffeeplace.Activity
+package com.example.coffeeplace.view
 
 import android.content.Intent
 import android.os.Bundle
