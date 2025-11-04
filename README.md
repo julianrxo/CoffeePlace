@@ -4,13 +4,22 @@
 
 ---
 
-## 🚀 Características principales (No funcionales)
+## 🚀 Características principales  
 
-- 🌅 **Pantalla Splash** con logo y nombre de la app.  
-- 👋 **Pantalla de Bienvenida** con acceso al login.  
-- 🔐 **Login de usuarios** (correo y contraseña).  
-- 📝 **Registro de nuevos clientes** con validaciones básicas.  
-- 👤 **Perfil del usuario** con opciones para editar datos o cerrar sesión.  
+### 🧩 Requerimientos funcionales
+- 🔐 **Autenticación de usuarios** (registro e inicio de sesión).  
+- 🧾 **CRUD de productos** (crear, leer, actualizar y eliminar).  
+- 🛒 **Gestión de carrito de compras** (agregar, visualizar y eliminar productos).  
+- 👤 **Perfil de usuario** con datos personales.  
+- 📍 **Geolocalización** para mostrar la ubicación actual del usuario.  
+- 🚪 **Cierre de sesión** seguro y persistente.  
+
+### ⚙️ Requerimientos no funcionales
+- 💾 **Integración con Firebase Realtime Database** para el almacenamiento en la nube.  
+- 🎨 **Interfaz intuitiva y responsiva** con diseño limpio y moderno.  
+- ⚡ **Flujo de navegación fluido** con `Splash`, `Bienvenida`, `Login` , `Registro` , `Perfil`, `Lista de productos`, `Carrito de compras`.  
+- 🔔 **Feedback visual y sonoro** (toasts y animaciones básicas).  
+- 📱 **Compatibilidad mínima con Android 8.0 (API 26)** y máxima con Android 15 (API 36).  
 
 ---
 
@@ -18,7 +27,10 @@
 
 - **Lenguaje:** Kotlin  
 - **Entorno:** Android Studio  
-- **SDK:** API 34 / Target 36  
+- **Base de datos:** Firebase Realtime Database  
+- **Arquitectura:** MVVM (ViewModel + LiveData + Repository)  
+- **Diseño:** XML y Material Design Components  
+- **SDK:** Compile SDK 36 / Min SDK 26  
 
 ---
 
@@ -27,28 +39,45 @@
 ```text
 app/
 ├── manifests/
+│   └── AndroidManifest.xml
 ├── java/
-│    └── com.example.coffeeplace/
-│         ├── Activity/
-│         │    ├── SplashActivity.kt
-│         │    ├── BienvenidaActivity.kt
-│         │    ├── LoginActivity.kt
-│         │    ├── RegistroActivity.kt
-│         │    └── PerfilActivity.kt
-│         └── MainActivity.kt
+│   └── com.example.coffeeplace/
+│        ├── view/
+│        │    ├── SplashActivity.kt
+│        │    ├── BienvenidaActivity.kt
+│        │    ├── LoginActivity.kt
+│        │    ├── RegistroActivity.kt
+│        │    ├── ProductoActivity.kt
+│        │    ├── CarritoActivity.kt
+│        │    └── PerfilActivity.kt
+│        ├── adapter/
+│        │    ├── ProductoAdapter.kt
+│        │    └── CarritoAdapter.kt
+│        ├── model/
+│        │    ├── Producto.kt
+│        │    ├── CarritoItem.kt
+│        │    └── Usuario.kt
+│        ├── repository/
+│        │    └── FirebaseRepository.kt
+│        └── viewModel/
+│             └── AppViewModel.kt
 └── res/
-├── layout/
-│    ├── activity_splash.xml
-│    ├── activity_bienvenida.xml
-│    ├── activity_login.xml
-│    ├── activity_registro.xml
-│    └── activity_perfil.xml
-├── values/
-│    ├── colors.xml
-│    ├── strings.xml
-│    └── themes.xml
-└── mipmap/
-    └── iconplace.png
+    ├── layout/
+    │    ├── activity_splash.xml
+    │    ├── activity_bienvenida.xml
+    │    ├── activity_login.xml
+    │    ├── activity_registro.xml
+    │    ├── activity_productos.xml
+    │    ├── activity_carrito.xml
+    │    ├── activity_perfil.xml
+    │    ├── item_producto.xml
+    │    └── item_carrito.xml
+    ├── values/
+    │    ├── colors.xml
+    │    ├── strings.xml
+    │    └── themes.xml
+    └── mipmap/
+         └── iconplace.png
 ```
 
 ---
