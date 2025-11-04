@@ -12,6 +12,6 @@ data class Producto(
     val precio: Double? = null,
     // URL para cargar la imagen del producto (usada con Glide en el Adapter).
     val imagenUrl: String? = null,
-    // Categoría a la que pertenece el producto (e.g., "Bebidas Calientes", "Repostería").
+    // Categoría a la que pertenece el producto (e.g., "Bebidas Calientes", "Accesorios").
     val categoria: String? = null
 )

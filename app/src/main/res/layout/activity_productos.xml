@@ -29,7 +29,7 @@
             android:id="@+id/tvTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lista de Productos"
+            android:text="@string/lista_de_productos"
             android:textSize="22sp"
             android:textStyle="bold"
             android:textColor="@color/brown_dark"
@@ -45,7 +45,7 @@
             android:id="@+id/btnAgregar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Agregar Producto"
+            android:text="@string/agregar_producto"
             android:backgroundTint="@color/coffee_primary"
             android:textColor="@android:color/white"
             android:layout_marginTop="12dp" />
@@ -60,7 +60,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="80dp"
-        android:contentDescription="Carrito"
+        android:contentDescription="@string/carrito"
         app:srcCompat="@drawable/ic_shopping_cart"
         android:tint="@android:color/white"
         android:backgroundTint="@color/coffee_primary" />

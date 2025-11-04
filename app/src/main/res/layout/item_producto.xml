@@ -75,11 +75,11 @@
         <!-- Botón circular "+" -->
         <ImageButton
             android:id="@+id/btnAgregarCarrito"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/bg_circle_coffee"
-            android:contentDescription="Agregar al carrito"
+            android:contentDescription="@string/agregar_al_carrito"
             android:src="@android:drawable/ic_input_add"
             app:tint="@android:color/white" />
     </LinearLayout>

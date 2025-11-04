@@ -5,7 +5,7 @@
     <!-- Opción de menú: Perfil -->
     <item
         android:id="@+id/menuPerfil"
-        android:title="Perfil"
+        android:title="@string/perfil"
         android:icon="@drawable/ic_profile_5"
         app:showAsAction="always" />
 </menu>

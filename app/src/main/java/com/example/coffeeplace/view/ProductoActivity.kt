@@ -18,7 +18,7 @@ import com.example.coffeeplace.model.CarritoItem
 import com.example.coffeeplace.model.Producto
 import com.example.coffeeplace.viewModel.AppViewModel
 
-// Activity principal que lista los productos y permite gestionarlos.
+
 class ProductoActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityProductosBinding

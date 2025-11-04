@@ -15,7 +15,6 @@ import com.google.android.gms.location.FusedLocationProviderClient // Cliente pa
 import com.google.android.gms.location.LocationServices
 import java.util.* // Para el Locale del Geocoder
 
-// Activity que muestra el perfil del usuario, gestiona la ubicación y las opciones de sesión.
 class PerfilActivity : AppCompatActivity() {
 
     private lateinit var fusedLocationClient: FusedLocationProviderClient // Cliente de ubicación de Google Play Services
@@ -124,7 +123,6 @@ class PerfilActivity : AppCompatActivity() {
             if (location != null) {
                 // Utiliza Geocoder para convertir coordenadas (lat, lon) a una dirección legible.
                 val geocoder = Geocoder(this, Locale.getDefault())
-                // geocoder.getFromLocation es deprecated, pero se usa en el ejemplo (API 33+ requiere otro metodo).
                 @Suppress("DEPRECATION")
                 val direcciones = geocoder.getFromLocation(location.latitude, location.longitude, 1)
 

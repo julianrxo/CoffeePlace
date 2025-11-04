@@ -26,4 +26,12 @@
     <string name="perfil_correo">correo@coffeeplace.com</string>
     <string name="btn_editar_perfil">Editar perfil</string>
     <string name="btn_cerrar_sesion">Cerrar sesión</string>
+    <string name="agregar_al_carrito">Agregar al carrito</string>
+    <string name="lista_de_productos">Lista de Productos</string>
+    <string name="agregar_producto">Agregar Producto</string>
+    <string name="carrito">Carrito</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="cantidad_1">Cantidad: 1</string>
+    <string name="nombre_del_producto">Nombre del producto</string>
+    <string name="perfil">Perfil</string>
 </resources>
