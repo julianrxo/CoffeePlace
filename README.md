@@ -8,7 +8,8 @@
 
 ### 🧩 Requerimientos funcionales
 - 🔐 **Autenticación de usuarios** (registro e inicio de sesión).  
-- 🧾 **CRUD de productos** (crear, leer, actualizar y eliminar).  
+- 🧾 **CRUD de productos** (crear, leer, actualizar y eliminar).
+- 🖼️ *Subida de imágenes a ImgBB mediante API* para almacenar fotos de productos en la nube.
 - 🛒 **Gestión de carrito de compras** (agregar, visualizar y eliminar productos).  
 - 👤 **Perfil de usuario** con datos personales.  
 - 📍 **Mapa con ubicaciones** muestra dos tiendas fijas y la ubicación actual del usuario.
