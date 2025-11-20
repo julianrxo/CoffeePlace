@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Para Android 13+ -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- Para Android 12 y menores -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- ✅ Para quitar el error de hardware -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -14,22 +27,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CoffeePlace">
 
-        <!-- Pantalla inicial -->
-        <activity
-            android:name=".view.SplashActivity"
-            android:exported="true"
-            android:label="@string/app_name"
-            android:theme="@style/Theme.CoffeePlace">
+        <activity android:name=".view.SplashActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 
-        <!-- Otras pantallas -->
         <activity android:name=".view.BienvenidaActivity" />
         <activity android:name=".view.LoginActivity" />
         <activity android:name=".view.RegistroActivity" />
+        <activity android:name=".view.MapaActivity" />
         <activity android:name=".view.PerfilActivity" />
         <activity android:name=".view.ProductoActivity" />
         <activity android:name=".view.CarritoActivity" />

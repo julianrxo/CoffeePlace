@@ -38,17 +38,8 @@
             android:text="@string/perfil_correo"
             android:textColor="@color/brown_medium"
             android:textSize="14sp"
-            android:layout_marginBottom="32dp"
+            android:layout_marginBottom="1dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <!-- Editar perfil -->
-        <Button
-            android:id="@+id/btnEditProfile"
-            android:text="@string/btn_editar_perfil"
-            android:backgroundTint="@color/brown_light"
-            android:textColor="@color/white"
-            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <!-- Cerrar sesión -->

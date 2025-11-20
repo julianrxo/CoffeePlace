@@ -31,7 +31,6 @@ class PerfilActivity : AppCompatActivity() {
         val tvUserEmail = findViewById<TextView>(R.id.tvUserEmail)
         tvLocation = findViewById(R.id.tvLocation)
         tvCoords = findViewById(R.id.tvCoords)
-        val btnEditProfile = findViewById<Button>(R.id.btnEditProfile)
         val btnLogout = findViewById<Button>(R.id.btnLogout)
 
         // 2. Obtener datos de la sesión guardada (SharedPreferences)
@@ -47,50 +46,6 @@ class PerfilActivity : AppCompatActivity() {
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         obtenerUbicacion() // Llama al metodo para iniciar la lógica de ubicación
 
-        // Lógica de Editar Perfil
-        btnEditProfile.setOnClickListener {
-            // Crea un layout dinámico para el diálogo.
-            val layout = LinearLayout(this).apply {
-                orientation = LinearLayout.VERTICAL
-                setPadding(50, 40, 50, 10)
-            }
-            // Campos de entrada con los valores actuales.
-            val inputNombre = EditText(this).apply {
-                hint = "Nuevo nombre"
-                setText(nombre)
-            }
-            val inputEmail = EditText(this).apply {
-                hint = "Nuevo correo"
-                setText(email)
-            }
-            layout.addView(inputNombre)
-            layout.addView(inputEmail)
-
-            // Muestra el diálogo de edición.
-            AlertDialog.Builder(this)
-                .setTitle("Editar Perfil")
-                .setView(layout)
-                .setPositiveButton("Guardar") { _, _ ->
-                    val nuevoNombre = inputNombre.text.toString().trim()
-                    val nuevoEmail = inputEmail.text.toString().trim()
-
-                    if (nuevoNombre.isNotEmpty() && nuevoEmail.isNotEmpty()) {
-                        // Guarda los nuevos datos en SharedPreferences.
-                        prefs.edit()
-                            .putString("nombre", nuevoNombre)
-                            .putString("email", nuevoEmail)
-                            .apply()
-                        // Actualiza la UI.
-                        tvUserName.text = nuevoNombre
-                        tvUserEmail.text = nuevoEmail
-                        Toast.makeText(this, "Perfil actualizado ✅", Toast.LENGTH_SHORT).show()
-                    } else {
-                        Toast.makeText(this, "Completa ambos campos", Toast.LENGTH_SHORT).show()
-                    }
-                }
-                .setNegativeButton("Cancelar", null)
-                .show()
-        }
 
         // Lógica de Cerrar Sesión
         btnLogout.setOnClickListener {

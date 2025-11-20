@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Botón flotante de ubicación -->
+    <ImageButton
+        android:id="@+id/btnMiUbicacion"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="22dp"
+        android:background="@drawable/bg_btn_round"
+        android:padding="14dp"
+        android:src="@drawable/ic_location"
+        android:contentDescription="@string/mi_ubicaci_n"/>
+
+</RelativeLayout>
