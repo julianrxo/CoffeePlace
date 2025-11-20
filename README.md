@@ -8,18 +8,22 @@
 
 ### 🧩 Requerimientos funcionales
 - 🔐 **Autenticación de usuarios** (registro e inicio de sesión).  
-- 🧾 **CRUD de productos** (crear, leer, actualizar y eliminar).  
+- 🧾 **CRUD de productos** (crear, leer, actualizar y eliminar).
+- 🖼️ **Subida de imágenes a ImgBB mediante API** para almacenar fotos de productos en la nube.
 - 🛒 **Gestión de carrito de compras** (agregar, visualizar y eliminar productos).  
 - 👤 **Perfil de usuario** con datos personales.  
-- 📍 **Geolocalización** para mostrar la ubicación actual del usuario.  
+- 📍 **Mapa con ubicaciones** muestra dos tiendas fijas y la ubicación actual del usuario.
+- 🛑 **Gestión de permisos en tiempo real** (cámara, ubicación, almacenamiento).
 - 🚪 **Cierre de sesión** seguro y persistente.  
 
 ### ⚙️ Requerimientos no funcionales
 - 💾 **Integración con Firebase Realtime Database** para el almacenamiento en la nube.  
 - 🎨 **Interfaz intuitiva y responsiva** con diseño limpio y moderno.  
-- ⚡ **Flujo de navegación fluido** con `Splash`, `Bienvenida`, `Login` , `Registro` , `Perfil`, `Lista de productos`, `Carrito de compras`.  
+- ⚡ **Flujo de navegación fluido** con `Splash`, `Bienvenida`, `Login` , `Registro` , `Perfil`, `Mapa`, `Lista de productos`, `Carrito de compras`.  
 - 🔔 **Feedback visual y sonoro** (toasts y animaciones básicas).  
-- 📱 **Compatibilidad mínima con Android 8.0 (API 26)** y máxima con Android 15 (API 36).  
+- 📱 **Compatibilidad mínima con Android 8.0 (API 26)** y máxima con Android 15 (API 36).
+- 🔒 **Manejo seguro de permisos** y datos del usuario.
+- 🗺️ **Rendimiento estable del GPS** y cargas eficientes del mapa.
 
 ---
 
@@ -46,6 +50,7 @@ app/
 │        │    ├── SplashActivity.kt
 │        │    ├── BienvenidaActivity.kt
 │        │    ├── LoginActivity.kt
+│        │    ├── MapaActivity.kt
 │        │    ├── RegistroActivity.kt
 │        │    ├── ProductoActivity.kt
 │        │    ├── CarritoActivity.kt
@@ -66,6 +71,7 @@ app/
     │    ├── activity_splash.xml
     │    ├── activity_bienvenida.xml
     │    ├── activity_login.xml
+    │    ├── activity_mapa.xml
     │    ├── activity_registro.xml
     │    ├── activity_productos.xml
     │    ├── activity_carrito.xml
